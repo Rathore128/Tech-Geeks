@@ -20,7 +20,8 @@ if(digitalRead(7)==HIGH)
  {
   Serial.write("joint 1 is not perfect\n");
  }
-digitalWrite(7,LOW);
+ delay(1000);
+digitalWrite(5,LOW);
 if(digitalRead(7)==HIGH)
  {
     Serial.write("joint 2 is correct\n");
@@ -29,4 +30,5 @@ if(digitalRead(7)==HIGH)
  {
   Serial.write("joint 2 is not perfect\n");
  }
+ delay(1000);
 }
